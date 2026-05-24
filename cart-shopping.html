@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.7.1/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-zkgTZKLKryHNwrdtWOK4P0D9A5DgyFQnUqxSZoXIn9nEGq2iaHEkccFxRUxgjYk+" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <header class="sticky-top w-75 mt-2 m-auto mb-5 p-1 p-lg-2">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                
+                <a class="navbar-brand text-light" href="index.html"><i class="ri-planet-line"></i> Brand</a>
+                
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarSupportedContent">
+
+                    <ul class="nav-list nav nav-pills flex-column flex-lg-row align-items-sm-start align-items-lg-center gap-4 mt-3 mt-lg-0">
+                        <li class="nav-item rounded-pill">
+                            <a class="nav-link rounded-pill" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item rounded-pill">
+                            <a class="nav-link rounded-pill" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item rounded-pill">
+                            <a class="nav-link rounded-pill" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item rounded-pill">
+                            <a class="nav-link rounded-pill" href="#">About</a>
+                        </li>
+                        <li class="nav-item rounded-pill">
+                            <a class="nav-link rounded-pill active" href="cart-shopping.html"><i class="ri-shopping-cart-2-line"></i></a>
+                        </li>
+                        <li class="data ms-auto ms-lg-auto">
+                            <div class="btn-group offline-holder" role="group">
+                                <button type="button" class="btn btn-primary dropdown-toggle profile" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="avatar bg-secondary offline-avatar">
+                                        <img class="avatar-img" src="imgs/user.jpg" alt="user@email.com">
+                                        <span class="avatar-status bg-danger"></span>
+                                    </div>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-start dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="profile.html"><i class="ri-user-line"></i> Profile</a></li>
+                                    <li><a class="dropdown-item online" href="#"><i class="ri-circle-fill on"></i> Show as Online</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="ri-logout-circle-line"></i> Log out</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group online-holder" role="group">
+                                <button type="button" class="btn btn-primary dropdown-toggle profile" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="avatar online-avatar">
+                                        <img class="avatar-img" src="imgs/user.jpg" alt="user@email.com">
+                                        <span class="avatar-status bg-success"></span>
+                                    </div>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-start dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="profile.html"><i class="ri-user-line"></i> profile</a></li>
+                                    <li><a class="dropdown-item offline" href="#"><i class="ri-circle-fill off"></i> Show as Offline</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="ri-logout-circle-line"></i> Log out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.7.1/dist/js/coreui.bundle.min.js" integrity="sha384-AnPj0DjUn1O+pSzWgjsW45mnqXeXe4twq/dOfIOJljS6shPfGNih3nWT6mhv4IXQ" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

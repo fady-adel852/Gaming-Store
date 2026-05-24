@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.7.1/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-zkgTZKLKryHNwrdtWOK4P0D9A5DgyFQnUqxSZoXIn9nEGq2iaHEkccFxRUxgjYk+" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <header class="sticky-top w-75 mt-2 m-auto mb-5 p-1 p-lg-2">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                
+                <a class="navbar-brand text-light" href="index.html"><i class="ri-planet-line"></i> Brand</a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarSupportedContent">
+
+                    <ul class="nav-list nav nav-pills flex-column flex-lg-row align-items-sm-start align-items-lg-center gap-4 mt-3 mt-lg-0">
+                        <li class="nav-item rounded-pill">
+                            <a class="nav-link rounded-pill" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item rounded-pill">
+                            <a class="nav-link active rounded-pill" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item rounded-pill">
+                            <a class="nav-link rounded-pill" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item rounded-pill">
+                            <a class="nav-link rounded-pill" href="#">About</a>
+                        </li>
+                        <li class="nav-item rounded-pill">
+                            <a class="nav-link rounded-pill" href="cart-shopping.html"><i class="ri-shopping-cart-2-line"></i></a>
+                        </li>
+                        <li class="data ms-auto ms-lg-auto">
+                            <div class="btn-group offline-holder" role="group">
+                                <button type="button" class="btn btn-primary dropdown-toggle profile" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="avatar bg-secondary offline-avatar">
+                                        <img class="avatar-img" src="imgs/user.jpg" alt="user@email.com">
+                                        <span class="avatar-status bg-danger"></span>
+                                    </div>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-start dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="profile.html"><i class="ri-user-line"></i> Profile</a></li>
+                                    <li><a class="dropdown-item online" href="#"><i class="ri-circle-fill on"></i> Show as Online</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="ri-logout-circle-line"></i> Log out</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group online-holder" role="group">
+                                <button type="button" class="btn btn-primary dropdown-toggle profile" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="avatar online-avatar">
+                                        <img class="avatar-img" src="imgs/user.jpg" alt="user@email.com">
+                                        <span class="avatar-status bg-success"></span>
+                                    </div>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-start dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="profile.html"><i class="ri-user-line"></i> profile</a></li>
+                                    <li><a class="dropdown-item offline" href="#"><i class="ri-circle-fill off"></i> Show as Offline</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="ri-logout-circle-line"></i> Log out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="secondary-nav nav nav-pills rounded-pill justify-content-center align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link pc rounded-pill" aria-current="page" href="#"><i class="ri-computer-line"></i> PC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link playstation rounded-pill" href="#"><i class="ri-playstation-line"></i> Playstation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link xbox rounded-pill" href="#"><i class="ri-xbox-fill"></i> Xbox</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nintendo rounded-pill" href="#"><i class="ri-switch-line"></i> Nintendo</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+
+
+
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-touch="true" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+        <h3 class="heading p-2 ps-4">Best Selling</h3>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="">
+                    <img src="imgs/wide/Jason_and_Lucia_02_With_Logos_landscape.jpg" class="d-block w-100" alt="GTA-6">
+                </a>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <a href="">
+                    <img src="imgs/wide/e51b775a60f44cc5fc183be24123d94ebeb37311b173cfbf.avif" class="d-block w-100" alt="NBA 2K26">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="">
+                    <img src="imgs/wide/054ff23fde43c010f63ed99eb1fca6957c26d2b136a9294d.avif" class="d-block w-100" alt="Battlefield">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="">
+                    <img src="imgs/wide/SpiderMan.avif" class="d-block w-100" alt="SpiderMan">
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+<div class="products-wrapper position-relative m-3">
+    
+    <div class="controls d-flex gap-2 w-100 d-flex align-items-center justify-content-between">
+        <h3 class="heading p-2 ps-4">
+            <a href="" class="heading text-decoration-none"><i class="ri-playstation-line"></i> Playstation<i class="ri-arrow-right-s-line"></i></a>
+        </h3>
+        <div class="holder">
+            <button class="btn btn-dark rounded-pill scroll-btn" data-scroll="-300"><i class="ri-arrow-left-circle-fill"></i></button>
+            <button class="btn btn-dark rounded-pill scroll-btn" data-scroll="300"><i class="ri-arrow-right-circle-fill"></i></button>
+        </div>
+    </div>
+
+    <div class="products-row d-flex overflow-auto gap-4 p-2">
+
+    <div class="game-card flex-shrink-0">
+        <img src="imgs/wide/171776.avif">
+
+        <div class="info">
+            <h6>Card Title</h6>
+            <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+            <p class="company">Company Name</p>
+            
+
+            <div class="bottom">
+                <span class="price">$120</span>
+                <Button><a href="">View</a></Button>
+            </div>
+        </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+        <img src="imgs/wide/83780.avif">
+
+        <div class="info">
+            <h6>GTA V</h6>
+            <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+            <p class="company">Rockstar</p>
+
+            <div class="bottom">
+                <span class="price">$120</span>
+                <Button><a href="">View</a></Button>
+            </div>
+        </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+        <img src="imgs/wide/171329.avif">
+
+        <div class="info">
+            <h6>Card Title</h6>
+            <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+            <p class="company">Company Name</p>
+            
+
+            <div class="bottom">
+                <span class="price">$120</span>
+                <Button><a href="">View</a></Button>
+            </div>
+        </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+        <img src="imgs/wide/145444.avif">
+
+        <div class="info">
+            <h6>Card Title</h6>
+            <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+            <p class="company">Company Name</p>
+            
+
+            <div class="bottom">
+                <span class="price">$120</span>
+                <Button><a href="">View</a></Button>
+            </div>
+        </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+        <img src="imgs/wide/173002.avif">
+
+        <div class="info">
+            <h6>Card Title</h6>
+            <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+            <p class="company">Company Name</p>
+            
+
+            <div class="bottom">
+                <span class="price">$120</span>
+                <Button><a href="">View</a></Button>
+            </div>
+        </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+        <img src="imgs/wide/95128.avif">
+
+        <div class="info">
+            <h6>Card Title</h6>
+            <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+            <p class="company">Company Name</p>
+            
+
+            <div class="bottom">
+                <span class="price">$120</span>
+                <Button><a href="">View</a></Button>
+            </div>
+        </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+        <img src="imgs/wide/143004.avif">
+
+        <div class="info">
+            <h6>Card Title</h6>
+            <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+            <p class="company">Company Name</p>
+            
+
+            <div class="bottom">
+                <span class="price">$120</span>
+                <Button><a href="">View</a></Button>
+            </div>
+        </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+        <img src="imgs/wide/171746.avif">
+
+        <div class="info">
+            <h6>Card Title</h6>
+            <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+            <p class="company">Company Name</p>
+            
+
+            <div class="bottom">
+                <span class="price">$120</span>
+                <Button><a href="">View</a></Button>
+            </div>
+        </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+      <img src="imgs/wide/163610.avif">
+
+      <div class="info">
+        <h6>Card Title</h6>
+        <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+        <p class="company">Company Name</p>
+        
+
+        <div class="bottom">
+          <span class="price">$120</span>
+          <Button><a href="">View</a></Button>
+        </div>
+      </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+      <img src="imgs/wide/161088.avif">
+
+      <div class="info">
+        <h6>Card Title</h6>
+        <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+        <p class="company">Company Name</p>
+        
+
+        <div class="bottom">
+          <span class="price">$120</span>
+          <Button><a href="">View</a></Button>
+        </div>
+      </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+      <img src="imgs/wide/173002.avif">
+
+      <div class="info">
+        <h6>Card Title</h6>
+        <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+        <p class="company">Company Name</p>
+        
+
+        <div class="bottom">
+          <span class="price">$120</span>
+          <Button><a href="">View</a></Button>
+        </div>
+      </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+      <img src="imgs/wide/144067.avif">
+
+      <div class="info">
+        <h6>Card Title</h6>
+        <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+        <p class="company">Company Name</p>
+        
+
+        <div class="bottom">
+          <span class="price"><span class="text-decoration-line-through">$150</span> $120</span>
+          <Button><a href="">View</a></Button>
+        </div>
+      </div>
+    </div>
+    <div class="game-card flex-shrink-0">
+      <img src="imgs/wide/172188.avif">
+
+      <div class="info">
+        <h6>Card Title</h6>
+        <p class="platform"><i class="ri-playstation-line"></i> Playstation</p>
+        <p class="company">Company Name</p>
+        
+
+        <div class="bottom">
+          <span class="price">$120</span>
+          <Button><a href="">View</a></Button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.7.1/dist/js/coreui.bundle.min.js" integrity="sha384-AnPj0DjUn1O+pSzWgjsW45mnqXeXe4twq/dOfIOJljS6shPfGNih3nWT6mhv4IXQ" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
